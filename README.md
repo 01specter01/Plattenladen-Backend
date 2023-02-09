@@ -13,7 +13,7 @@ Committe regelmäßig und mit aussagekräftigen Messages!
 
 ```js
 Aufgaben 8. Februar
-1. Beendet die Aufgaben von gestern
+1. Beendet die Aufgaben von gestern ✓
 2. Implementiert für die Get All Products Route, dass man einen Such Term als Query Parameter erwartet
 3. Überlegt euch, wie ihr mithilfe von mongoose den Suchterm nutzen kann um Künstler und Titel zu suchen
 ```
