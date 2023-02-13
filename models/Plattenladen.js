@@ -12,6 +12,8 @@ const schema = new mongoose.Schema({
     year: {
         type: Number,
         required: true,
+        min: [1800, "Too low old record age"],
+        max: 2023,
     },
     picture: {
         type: String,
@@ -20,6 +22,8 @@ const schema = new mongoose.Schema({
     price: {
         type: Number,
         required: true,
+        min: [15, "Too low price for record"],
+        max: 25,
     },
 });
 const Plattenladen = mongoose.model("Plattenladen", schema);
