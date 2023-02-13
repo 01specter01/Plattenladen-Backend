@@ -28,7 +28,20 @@ const schema = new mongoose.Schema({
 });
 const Plattenladen = mongoose.model("Plattenladen", schema);
 
-export const getAll = async () => {
-    const plattenladens = await Plattenladen.find();
+export const getAll = async (search="") => {
+    const plattenladens = await Plattenladen.find({
+        $or: [
+            {
+                title: {
+                    $regex: ".*" + search + ".*",
+                },
+            },
+            {
+                artist: {
+                    $regex: ".*" + search + ".*",
+                },
+            },
+        ],
+    });
     return plattenladens;
 };
