@@ -15,3 +15,12 @@ app.use(logMiddleware);
 
 app.use(express.json());
 app.use("/plattenladens", plattenladen);
+
+////
+// look in backend lifecoding 10 && 05 for the middleware for methode
+// front and backend link needs to be used:
+// server.use("/", express.static("./files/frontend"));
+// server.get("/*", (req, res) =>
+//     res.sendFile(__dirname + "/files/frontend/index.html")
+// );
+///
