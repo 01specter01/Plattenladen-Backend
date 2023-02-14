@@ -51,3 +51,10 @@ result = await Record.find({
 2. Benutze einen Build des Frontends aus dem Frontend-Repo und liefere es über dein Backend aus. Du musst nach dem Klonen selbst einen Build erstellen.
 3. Kann dein Endpoint vom Frontend ausgelesen werden? Korrigiere ihn, falls nötig.
 ```
+
+```js
+1. Beende die Aufgaben von gestern.
+2. Richte zwei Endpoints ein, mit denen Produkte hinzugefügt und bearbeitet werden können.
+3. Verbinde die aktuelle Version des Frontends mit deinem Backend, sodass Produkte hinzugefügt werden können.
+4. Überlege dir, wo wir im Frontend die Produktdaten fetchen und verwalten wollen.
+```
