@@ -9,9 +9,9 @@ const createPlattenladen = async () => {
     const plattenladen = new Plattenladen({
         title: faker.lorem.sentences(1),
         artist: faker.lorem.sentences(1),
-        year: faker.date(),
+        year: faker.finance.amount(1800, 2023),
         picture: faker.image.abstract(1),
-        price: faker.finance.amount(50),
+        price: faker.finance.amount(15, 25),
     });
 
     await plattenladen.save();
@@ -19,7 +19,7 @@ const createPlattenladen = async () => {
 
 const createPlattenladens = async (count = 20) => {
     for (let i = 0; i < count; i++) {
-        console.log("creating report: ", i + 1);
+        console.log("creating plattenladen: ", i + 1);
         await createPlattenladen();
     }
 };

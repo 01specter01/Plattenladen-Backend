@@ -25,7 +25,7 @@ Aufgaben 9. Februar
 3. Erstelle eine Model für Records ✓
 4. Erstelle Validatoren, dass die notwendigen Daten Pflicht sind und URLs im richtigen Format abgespeichert werden ✓
 5. Baue eine Route und dazugehörige Methode, die alle Records zurück gibt. Nutze den Suchterm von gestern zum Filtern der Ergebnisse ✓
-6. Baue eine Seed Datei, die Records anlegt. Erstelle deine eigenen Daten oder nutze Faker
+6. Baue eine Seed Datei, die Records anlegt. Erstelle deine eigenen Daten oder nutze Faker  ✓
 BONUS: Erstelle ein Model für User und die notwendigen Methoden und Routen für Login und Register inkl. hashing und Token
 ```
 
