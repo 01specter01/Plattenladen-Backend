@@ -47,7 +47,7 @@ result = await Record.find({
 ```
 
 ```js
-1. Beende die Aufgaben von letzter Woche.
+1. Beende die Aufgaben von letzter Woche.  ✓
 2. Benutze einen Build des Frontends aus dem Frontend-Repo und liefere es über dein Backend aus. Du musst nach dem Klonen selbst einen Build erstellen.
 3. Kann dein Endpoint vom Frontend ausgelesen werden? Korrigiere ihn, falls nötig.
 ```

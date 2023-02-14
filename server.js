@@ -1,8 +1,6 @@
 import dotenv from "dotenv";
 dotenv.config();
-
 import "./lib/mongoose.js";
-
 import express from "express";
 import plattenladen from "./router/plattenladens.js";
 const app = express();
@@ -19,8 +17,8 @@ app.use("/plattenladens", plattenladen);
 ////
 // look in backend lifecoding 10 && 05 for the middleware for methode
 // front and backend link needs to be used:
-// server.use("/", express.static("./files/frontend"));
-// server.get("/*", (req, res) =>
-//     res.sendFile(__dirname + "/files/frontend/index.html")
-// );
+app.use("/", express.static("./files/frontend"));
+app.get("/*", (req, res) =>
+    res.sendFile(__dirname + "/files/frontend/index.html")
+);
 ///
