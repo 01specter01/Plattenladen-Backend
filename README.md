@@ -58,3 +58,12 @@ result = await Record.find({
 3. Verbinde die aktuelle Version des Frontends mit deinem Backend, sodass Produkte hinzugefügt werden können.
 4. Überlege dir, wo wir im Frontend die Produktdaten fetchen und verwalten wollen.
 ```
+
+```js
+1. Beende die Aufgaben von gestern
+2. Erweitere dein Products Modell um das Feld inventory, was Aussage darüber trifft welcher Bestand des Produkts vorhanden ist. Default sollte dieser 0 und nie kleiner als 0 sein
+3. Erstelle ein neues Modell Order, wo die Bestellungen gespeichert werden.
+4. Als Felder möchten wir ein Array aus Objekten mit Produkt_id die auf unser produkt Model referenzieren, und Menge, die Bezahlmethode und die Adresse als Subdocument
+5. Erstelle eine POST /, eine GET / und eine GET /:id Route. AUFGEPASST. Eine Bestellung sollte nur dann möglich sein, wenn die gewünschte Anzahl auch als inventory vorhanden sind
+BONUS: Falls noch nicht vorhanden baue eine User Modell und verweise in deiner Bestellung auch auf den User
+```
