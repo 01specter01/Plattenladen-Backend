@@ -10,7 +10,7 @@ const createPlattenladen = async () => {
         title: faker.lorem.sentences(1),
         artist: faker.lorem.sentences(1),
         year: faker.finance.amount(1800, 2023),
-        picture: faker.image.abstract(1),
+        picture: faker.image.abstract(1234, 2345, true),
         price: faker.finance.amount(15, 25),
     });
 
