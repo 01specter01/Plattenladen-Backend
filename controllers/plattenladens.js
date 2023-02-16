@@ -16,6 +16,7 @@ export const remove = async (req, res) => {
     return res.status(204).json();
 };
 export const update = async (req, res) => {
-    const plattenladen = await Plattenladen.update(req.body);
-    return res.status(200).json(plattenladen);
+    const plattenladen = await Plattenladen.update(req.params.id, req.body);
+
+    return res.status(202).json(plattenladen);
 };

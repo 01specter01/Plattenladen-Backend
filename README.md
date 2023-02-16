@@ -54,7 +54,7 @@ result = await Record.find({
 
 ```js
 1. Beende die Aufgaben von gestern. ✓
-2. Richte zwei Endpoints ein, mit denen Produkte hinzugefügt und bearbeitet werden können.
+2. Richte zwei Endpoints ein, mit denen Produkte hinzugefügt und bearbeitet werden können.  ✓
 3. Verbinde die aktuelle Version des Frontends mit deinem Backend, sodass Produkte hinzugefügt werden können.
 4. Überlege dir, wo wir im Frontend die Produktdaten fetchen und verwalten wollen.
 ```

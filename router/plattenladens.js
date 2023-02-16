@@ -11,6 +11,6 @@ const router = Router();
 router
     .get("/", validate(getSchema), plattenladens.getAll)
     .post("/", validate(postSchema), plattenladens.create)
-    .patch("/:plattenladenId", validate(patchSchema), plattenladens.update)
+    .patch("/:id", validate(patchSchema), plattenladens.update)
     .delete("/:id", validate(deleteSchema), plattenladens.remove);
 export default router;

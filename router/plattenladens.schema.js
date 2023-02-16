@@ -22,5 +22,12 @@ export const deleteSchema = {
 };
 export const patchSchema = {
     type: "object",
+    properties: {
+        title: { type: "string" },
+        artist: { type: "string" },
+        year: { type: "number" },
+        picture: { type: "string" },
+        price: { type: "number" },
+    },
     additionalProperties: false,
 };

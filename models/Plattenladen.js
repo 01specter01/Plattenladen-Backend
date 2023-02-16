@@ -56,15 +56,11 @@ export const create = async ({ title, artist, year, picture, price }) => {
     const result = await newPlattenladen.save();
     return result;
 };
-export const update = async (plattenladenId, data) => {
-    const updatePlattenladen = await Plattenladen.findByIdAndUpdate(
-        plattenladenId,
-        data,
-        {
-            new: true,
-            runValidators: true,
-        }
-    );
+export const update = async (id, data) => {
+    const updatePlattenladen = await Plattenladen.findByIdAndUpdate(id, data, {
+        new: true,
+        runValidators: true,
+    });
 
     return updatePlattenladen;
 };
