@@ -45,20 +45,26 @@ export const getAll = async (search = "") => {
     });
     return plattenladens;
 };
-export const create = async (search = "") => {
-    const plattenladens = await Plattenladen.find({
-        $or: [
-            {
-                title: {
-                    $regex: ".*" + search + ".*",
-                },
-            },
-            {
-                artist: {
-                    $regex: ".*" + search + ".*",
-                },
-            },
-        ],
+export const create = async ({ title, artist, year, picture, price }) => {
+    const newPlattenladen = new Plattenladen({
+        title,
+        artist,
+        year,
+        picture,
+        price,
     });
-    return plattenladens;
+    const result = await newPlattenladen.save();
+    return result;
+};
+export const update = async (plattenladenId, data) => {
+    const updatePlattenladen = await Plattenladen.findByIdAndUpdate(
+        plattenladenId,
+        data,
+        {
+            new: true,
+            runValidators: true,
+        }
+    );
+
+    return updatePlattenladen;
 };

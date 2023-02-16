@@ -8,10 +8,14 @@ export const getAll = async (req, res) => {
      */
 };
 export const create = async (req, res) => {
-    // const result  = await Plattenladens
-    return res.status(200).json();
+    const plattenladen = await Plattenladen.create(req.body);
+    return res.status(201).json(plattenladen);
 };
 export const remove = async (req, res) => {
     // const result  = await Plattenladens
     return res.status(204).json();
+};
+export const update = async (req, res) => {
+    const plattenladen = await Plattenladen.update(req.body);
+    return res.status(200).json(plattenladen);
 };

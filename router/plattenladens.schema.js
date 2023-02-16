@@ -20,3 +20,7 @@ export const deleteSchema = {
     type: "object",
     additionalProperties: false,
 };
+export const patchSchema = {
+    type: "object",
+    additionalProperties: false,
+};
